@@ -1,7 +1,7 @@
 export default function Page() {
     return (
-        <div className="flex flex-col">
-            Help!
+        <div className='w-[80%] self-center h-full flex flex-col gap-[10%]'>
+
         </div>
     )
 }

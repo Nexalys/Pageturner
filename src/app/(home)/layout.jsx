@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           <HomeSidebar />
           <section className=' w-full h-full rounded-c overflow-hidden'>
             <MainNavbar />
-            <div className='bg-background h-full w-full rounded-c rounded-tl-none'>
+            <div className='bg-background h-full w-full rounded-c rounded-tl-none flex flex-col py-[5%] overflow-auto'>
               {children}
             </div>
           </section>

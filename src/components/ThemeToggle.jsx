@@ -17,6 +17,7 @@ export function ThemeToggle() {
             <Dropdown label={'hello'} buttonType='outline' icon={resolvedTheme === 'dark' ?
                             <i className="fa-regular fa-moon"></i> :
                             <i className="fa-regular fa-sun"></i>}
+                      title={'Theme Toggle'}
             >
                 <Option
                     onClick={() => setTheme('light')}

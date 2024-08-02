@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { SidebarLink } from "@/components/dashboard/SidebarLink";
 import { usePathname } from "next/navigation";
-import {path} from "@tauri-apps/api";
 
 export function HomeSidebar() {
     const pathname = usePathname();
@@ -12,7 +11,7 @@ export function HomeSidebar() {
     return (
         <section className='h-full w-[25%] flex flex-col justify-center relative top-[-4%]'>
             <Link href={'/'}>
-                <h1 className='mx-10 my-7 text-3xl font-semibold py-[10%] text-accent'>
+                <h1 className='mx-10 my-7 text-5xl font-semibold py-[10%] text-accent'>
                     Pageturner
                 </h1>
             </Link>
@@ -22,7 +21,7 @@ export function HomeSidebar() {
                     Dashboard
                 </SidebarLink>
                 <SidebarLink to='/dashboard-wsp' selected={pathname === '/dashboard-wsp'}>
-                    <i className="fa-solid fa-briefcase"></i>
+                    <i className="fa-solid fa-laptop-file"></i>
                     Workspaces
                 </SidebarLink>
                 <SidebarLink to='/open' selected={pathname === '/open'}>
@@ -43,3 +42,4 @@ export function HomeSidebar() {
         </section>
     )
 }
+

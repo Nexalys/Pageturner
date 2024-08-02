@@ -14,6 +14,9 @@ export function Button(props) {
         case 'ghost':
             styleType = 'w-fit px-3 py-2 rounded-sm text-text hover:bg-accent/20 transition-all duration-[0.4s] ease-in-out';
             break
+        case 'gray-ghost':
+            styleType = 'w-fit px-3 py-2 rounded-sm text-text hover:bg-trans-gray transition-all duration-[0.4s] ease-in-out';
+            break
         default:
             styleType = 'bg-accent w-fit px-3 py-2 rounded-sm text-onAccent hover:bg-blue-600 transition-all duration-[0.4s] ease-in-out';
             break

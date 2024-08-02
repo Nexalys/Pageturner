@@ -10,13 +10,17 @@ export function MainNavbar() {
             <MainTab
                 home={true}
                 active={true}
+                to={'/'}
             />
             <MainTab
                 workspaceName='School PDFs'
+                to={'/workspaces'}
             />
             <MainTab
                 workspaceName='Volunteer Work'
+                to={'/workspaces'}
             />
+
         </div>
     )
 }

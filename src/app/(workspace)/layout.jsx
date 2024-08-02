@@ -1,17 +1,17 @@
 import { Sora } from "next/font/google";
+
 import { Draggable } from "@/components/Draggable";
 import { ThemeProvider } from "next-themes";
-import { MainTab } from "@/components/navigation/MainTab";
+import { MainNavbar } from "@/components/navigation/MainNavbar";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { SidebarLink } from "@/components/dashboard/SidebarLink";
+import { HomeSidebar } from "@/components/dashboard/Sidebar";
+
 import '../globals.css';
 import "../../../public/fontawesome/css/fontawesome.css";
 import "../../../public/fontawesome/css/brands.css";
 import "../../../public/fontawesome/css/solid.css";
 
-
 const sora = Sora({ subsets: ["latin"] });
-
 
 export const metadata = {
   title: "Pageturner",
@@ -20,43 +20,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme='light'>
-    <body className={`${sora.className} text-text`}>
-    <Draggable/>
-    <ThemeProvider
-        attribute="class"
-          defaultTheme="light"
+      <html lang="en">
+      <body className={`${sora.className} text-text m-0`}>
+      <Draggable/>
+      <ThemeProvider
+          attribute="class"
           enableSystem
           disableTransitionOnChange
       >
         <ThemeToggle />
-        <main className='bg-primary h-[100vh] flex p-[1%]'>
-          <section className='h-full w-[25%] flex'>
-            <h1 className='text-3xl font-semibold py-[15%] text-accent'>
-              Workspaces
-            </h1>
-          </section>
-          <section className=' w-full h-full rounded-[20px] overflow-hidden'>
-            <div className='h-[6%] w-fit bg-background main-navigator relative
-            rounded-tr-[20px] flex items-center px-[1.5%] py-1.5 text-base gap-5'>
-              <MainTab
-                home={true}
-                active={true}
-              />
-              <MainTab
-                  workspaceName='School PDFs'
-              />
-              <MainTab
-                  workspaceName='Volunteer Work'
-              />
-            </div>
-            <div className='bg-background h-full w-full rounded-[20px] rounded-tl-none'>
+        <main className='bg-primary h-[100vh] flex py-[1%] pr-[1%]'>
+          <HomeSidebar />
+          <section className=' w-full h-full rounded-c overflow-hidden'>
+            <MainNavbar />
+            <div className='bg-background h-full w-full rounded-c rounded-tl-none flex flex-col py-[5%] overflow-auto'>
               {children}
             </div>
           </section>
         </main>
       </ThemeProvider>
       </body>
-    </html>
+      </html>
   );
 }

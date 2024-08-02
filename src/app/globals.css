@@ -4,7 +4,10 @@
 
 :root {
     font-size: 16px;
-    cursor: usrl('https://github.com/Nexalys/Pageturner/blob/3cb9bb1078272d38830693b0a58c3f0a21e91d9f/public')
+    cursor: url('../../public/Cursors/Rectangle 16.png'), auto;
+
+    --trans-gray: 218 11% 65% / 20%;
+    --error: 4 100% 65%;
 }
 
 :root.light {
@@ -12,18 +15,18 @@
     --accent-20: 209 100% 45% / 25%;
     --on-accent: 0 0% 100%;
     --background: 223 25% 96%;
-    --error: 4 100% 65%;
     --primary: 223 36% 91%;
     --text: 240 4% 18%;
+    --text-sc: 218 11% 45%;
 }
 
 :root.dark {
-    --accent: 209 100% 77%;
+    --accent: 209 100%  60%;
     --accent-20: 209 100% 57% / 25%;
     --background: 240 6% 25%;
-    --error: 0 0% 100%;
     --primary: 240 7% 20%;
     --text: 0 0% 100%;
+    --text-sc: 218 11% 65%;
 }
 
 .main-navigator::after {
@@ -32,4 +35,9 @@
     top: 0;
     box-shadow: -15px 15px 0 hsl(var(--background));
     @apply bg-transparent absolute h-[100%] rounded-bl-[20px] aspect-square
+}
+
+::selection {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--background));
 }
