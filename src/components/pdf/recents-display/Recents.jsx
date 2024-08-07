@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Listview } from "@/components/pdf/recents-display/Listview";
 import { Gridview } from "@/components/pdf/recents-display/Gridview";
+import { Icon } from '@/components/ui/Icon';
 
 const views = Object.freeze({
     List: 0,
@@ -56,7 +57,7 @@ const files = [
         isWorkspace: true,
     },
     {
-        file: 'Another File.pdf',
+        file: 'Another File Is Here Here.pdf',
         path: 'path/to/Another File.pdf',
         isWorkspace: false,
     },
@@ -81,7 +82,7 @@ export function Recents() {
 
     if (files) {
         return (
-            <div className='flex flex-col w-[50%] gap-10'>
+            <div className='flex flex-col w-[70%] gap-10'>
                 <div className='flex items-center w-full text-[1.3rem]'>
                     <h3 className='text-2xl mr-auto'>
                         Recents
@@ -92,9 +93,9 @@ export function Recents() {
                             onClick={toggleView}
                         >
                             {view === views.List ? (
-                                <i className="fa-solid fa-list-ul"></i>
+                                <Icon name='SquareMenu'/>
                             ) : (
-                                <i className="fa-solid fa-grip"></i>
+                                <Icon name='LayoutGrid' />
                             )}
                         </div>
                     </div>

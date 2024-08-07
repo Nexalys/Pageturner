@@ -4,7 +4,7 @@ export function Gridview({ files }) {
     const rows = Math.ceil(files.length / 3); // Use Math.ceil to ensure enough rows
 
     return (
-        <div className={`grid grid-cols-3 gap-[100px] mb-[15%]`} style={{ gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))` }}>
+        <div className={`grid grid-cols-2 md:grid-cols-3 mb-[15%]`} style={{ gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))` }}>
             {
                 files.map((file, ind) =>
                         file.file && (

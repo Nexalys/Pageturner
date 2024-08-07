@@ -3,6 +3,7 @@
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
 import { Dropdown, Option } from "@/components/ui/Dropdown";
+import {Icon} from "@/components/ui/Icon";
 
 export function ThemeToggle() {
     const { theme, resolvedTheme, setTheme } = useTheme();
@@ -15,26 +16,26 @@ export function ThemeToggle() {
         <div className='absolute top-[2.4%] right-[3%]
          h-10 aspect-square flex justify-center items-center'>
             <Dropdown label={'hello'} buttonType='outline' icon={resolvedTheme === 'dark' ?
-                            <i className="fa-regular fa-moon"></i> :
-                            <i className="fa-regular fa-sun"></i>}
+                            <Icon name='Moon'/> :
+                            <Icon name='Sun'/>}
                       title={'Theme Toggle'}
             >
                 <Option
                     onClick={() => setTheme('light')}
                     selected={theme === 'light'}>
-                    <i className="fa-regular fa-sun"/>
+                    <Icon name='Sun'/>
                     Light
                 </Option>
                 <Option
                     onClick={() => setTheme('dark')}
                     selected={theme === 'dark'}>
-                    <i className="fa-regular fa-moon"/>
+                    <Icon name='Moon'/>
                     Dark
                 </Option>
                 <Option
                     onClick={() => setTheme('system')}
                     selected={theme === 'system'}>
-                    <i className="fa-regular fa-gear"/>
+                    <Icon name='MonitorCog'/>
                     System
                 </Option>
             </Dropdown>

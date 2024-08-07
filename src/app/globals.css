@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+    @apply font-extralight select-none;
+
     font-size: 16px;
     cursor: url('../../public/Cursors/Rectangle 16.png'), auto;
 
@@ -34,7 +36,8 @@
     left: 100%;
     top: 0;
     box-shadow: -15px 15px 0 hsl(var(--background));
-    @apply bg-transparent absolute h-[100%] rounded-bl-[20px] aspect-square
+    z-index: 1;
+    @apply bg-transparent absolute h-[100%] rounded-bl-c aspect-square;
 }
 
 ::selection {

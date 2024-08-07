@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/Button";
 import { useState } from 'react';
+import { Icon } from '@/components/ui/Icon';
 
 export default function Page() {
     const [ selectable, setSelecatable ] = useState(false);
@@ -16,7 +17,7 @@ export default function Page() {
                     <div className='flex gap-5 items-center'>
                         <Button>
                             <div className='flex gap-3 items-center'>
-                                <i className="fa-solid fa-folder-plus"></i>
+                                <Icon name='FolderPlus' />
                                 New Workspace
                             </div>
                         </Button>
@@ -25,8 +26,8 @@ export default function Page() {
                                 {!selectable ? 'Select Workspaces' : 'Done'}
                             </Button>
                             {selectable &&
-                                <div className='h-fit w-fit px-2 py-1 flex items-center justify-center aspect-square rounded-sm hover:bg-trans-gray transition-all duration-[0.4s] ease-in-out'>
-                                    <i className="fa-solid fa-trash-can text-error text-xl"/>
+                                <div className='h-fit w-fit px-2 py-1 text-error text-xl flex items-center justify-center aspect-square rounded-sm hover:bg-trans-gray transition-all duration-[0.4s] ease-in-out'>
+                                    <Icon name={'Trash'}/>
                                 </div>
                             }
                         </span>

@@ -29,12 +29,15 @@ module.exports = {
                 '5xl': '3.053rem',
             },
             borderRadius: {
-                'sm': '10px',
-                'm': '15px',
-                'c': '20px',
+                'sm': '5px',
+                'm': '10px',
+                'c': '12px',
             },
             cursor: {
                 'custom': 'url(\'/public/Cursors/Rectangle 16.png\')',
+            },
+            strokeWidth: {
+                'ma': '1.5px'
             }
         }
 	}, 

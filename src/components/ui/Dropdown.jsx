@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button';
 
 function DropdownSeperator() {
     return (
-        <hr className='w-full border-text border-[0.5px] my-4'/>
+        <div className='border-t-[0.5px] w-full border-text self-center my-4'/>
     )
 }
 
@@ -33,7 +33,7 @@ function Dropdown({ children, trigger, icon, title, buttonType }) {
     const [position, setPosition] = useState('bottom');
 
     const positionStyle = {
-        'bottom': "dropdown-content rounded-sm mt-2 h-fit w-fit bg-primary border-text border-[1px] min-w-[200px] absolute right-0 m-auto p-[20px] flex flex-col z-[2]",
+        'bottom': "dropdown-content rounded-sm mt-2 h-fit w-fit bg-primary border-text border-[0.5px] min-w-[200px] absolute right-0 m-auto p-[20px] flex flex-col z-[2]",
         "top": "dropdown-content rounded-sm mt-2 h-fit w-fit bg-primary border-text border-[1px] min-w-[200px] absolute right-[100%] bottom-[100%] m-auto p-[20px] flex flex-col z-[2]"
     }
 
@@ -78,7 +78,7 @@ function Dropdown({ children, trigger, icon, title, buttonType }) {
             {isOpen && <div className={positionStyle[position]}
             onMouseLeave={(e) => handleMouseLeaveDropdown(e)}
             onMouseEnter={(e) => handleMouseEnterDropdown(e)}>
-                {title && <div className='font-extralight text-center text-text-sc  text-sm'>
+                {title && <div className='text-center text-text-sc text-sm my-3'>
                     {title}
                 </div>}
                 {children}
