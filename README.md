@@ -1,13 +1,8 @@
-# Pageturner 
+# React + Vite
 
-Welcome to *Pageturner* a modern, new and improved PDF Reader with no in app purchases. Find all your PDF needs met with just one app.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This is the development repository for the codebase of *Pageturner*. Use these commands to run it 
+Currently, two official plugins are available:
 
-```shell
-npm install 
-
-npm run tauri dev 
-```
-
-This should launch the app for you! Happy PDFing <3
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

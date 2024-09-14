@@ -1,4 +1,4 @@
-import { GridElement } from "@/components/pdf/recents-display/Grid";
+import { GridElement } from "./Grid";
 
 export function Gridview({ files }) {
     const rows = Math.ceil(files.length / 3); // Use Math.ceil to ensure enough rows

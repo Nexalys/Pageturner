@@ -1,5 +1,5 @@
-import {Dropdown, DropdownSeperator, Option, OptionGroup} from "@/components/ui/Dropdown";
-import { Icon } from '@/components/ui/Icon';
+import {Dropdown, DropdownSeperator, Option, OptionGroup} from "../../ui/Dropdown";
+import { Icon } from '../../ui/Icon';
 
 export function GridElement({ filename, pathname, isWorkspace }) {
     return (

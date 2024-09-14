@@ -1,4 +1,4 @@
-import { ListElement } from "@/components/pdf/recents-display/List";
+import { ListElement } from "./List";
 
 
 export function Listview({ files }) {

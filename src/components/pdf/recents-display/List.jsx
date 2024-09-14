@@ -3,8 +3,8 @@ import {
     Option,
     OptionGroup,
     DropdownSeperator
-} from "@/components/ui/Dropdown";
-import { Icon } from '@/components/ui/Icon';
+} from "../../ui/Dropdown";
+import { Icon } from '../../ui/Icon';
 
 export function ListElement({ filename, pathname, isWorkspace }) {
     return (

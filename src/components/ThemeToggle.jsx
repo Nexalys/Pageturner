@@ -1,9 +1,7 @@
-'use client';
-
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
-import { Dropdown, Option } from "@/components/ui/Dropdown";
-import {Icon} from "@/components/ui/Icon";
+import { Dropdown, Option } from "./ui/Dropdown";
+import { Icon } from "./ui/Icon";
 
 export function ThemeToggle() {
     const { theme, resolvedTheme, setTheme } = useTheme();

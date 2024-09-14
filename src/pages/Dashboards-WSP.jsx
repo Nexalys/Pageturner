@@ -1,10 +1,8 @@
-'use client';
-
-import { Button } from "@/components/ui/Button";
+import { Button } from "../components/ui/Button";
 import { useState } from 'react';
-import { Icon } from '@/components/ui/Icon';
+import { Icon } from '../components/ui/Icon';
 
-export default function Page() {
+export default function DashboardsWSP() {
     const [ selectable, setSelecatable ] = useState(false);
 
     return (

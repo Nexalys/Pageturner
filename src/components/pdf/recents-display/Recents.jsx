@@ -1,9 +1,7 @@
-'use client';
-
 import { useState } from "react";
-import { Listview } from "@/components/pdf/recents-display/Listview";
-import { Gridview } from "@/components/pdf/recents-display/Gridview";
-import { Icon } from '@/components/ui/Icon';
+import { Listview } from "./Listview";
+import { Gridview } from "./Gridview";
+import { Icon } from '../../ui/Icon';
 
 const views = Object.freeze({
     List: 0,

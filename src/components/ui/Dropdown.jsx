@@ -1,7 +1,6 @@
-'use client';
-
 import { useState } from "react";
-import { Button } from '@/components/ui/Button';
+import { Button } from '../ui/Button';
+import {Icon} from "../ui/Icon";
 
 function DropdownSeperator() {
     return (
@@ -21,7 +20,7 @@ function Option(props) {
     return (
         <div className="option whitespace-nowrap hover:bg-trans-gray px-5 py-2 rounded-sm flex gap-5 items-center relative" {...props}>
             {props?.selected && <span className='absolute left-[-1px] flex items-center'>
-                <i className="fa-solid fa-grip-lines-vertical text-gray-400"></i>
+                <Icon name='Dot'/>
             </span>}
             {props.children}
         </div>

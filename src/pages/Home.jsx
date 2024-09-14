@@ -1,6 +1,10 @@
-import { PDFOption } from "@/components/pdf/PDFOption";
-import { Recents } from '@/components/pdf/recents-display/Recents';
-import { Icon } from '@/components/ui/Icon';
+import { PDFOption } from "../components/pdf/PDFOption";
+import { Recents } from '../components/pdf/recents-display/Recents';
+import { Icon } from '../components/ui/Icon';
+
+export async function Loader() {
+    return { hi: 'how are you' }
+}
 
 const PDFOptions = [
     {
@@ -26,7 +30,7 @@ const PDFOptions = [
 ]
 
 
-export default function Page() {
+export default function Homepage() {
     return (
         <div className='w-[80%] self-center h-full flex flex-col gap-[10%]'>
             <h3 className='text-2xl'>
@@ -34,9 +38,9 @@ export default function Page() {
             </h3>
             <div className='flex w-full justify-between'>
                 {PDFOptions.map((option, ind) => (<PDFOption
-                label={option.name}
-                key={ind}
-                icon={option.icon}
+                    label={option.name}
+                    key={ind}
+                    icon={option.icon}
                 />))}
             </div>
             <div className='flex gap-[10%]'>

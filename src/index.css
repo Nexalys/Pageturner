@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 :root {
+    font-family: "Sora", sans-serif;
     @apply font-extralight select-none;
-
     font-size: 16px;
-    cursor: url('../../public/Cursors/Rectangle 16.png'), auto;
 
     --trans-gray: 218 11% 65% / 20%;
     --error: 4 100% 65%;
@@ -17,7 +16,7 @@
     --accent-20: 209 100% 45% / 25%;
     --on-accent: 0 0% 100%;
     --background: 223 25% 96%;
-    --primary: 223 36% 91%;
+    --primary: 223 30% 90%;
     --text: 240 4% 18%;
     --text-sc: 218 11% 45%;
 }
