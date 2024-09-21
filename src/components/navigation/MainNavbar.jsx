@@ -3,7 +3,7 @@ import { HomeTab, AddTab } from "./SpecialTabs";
 import { useAppState } from "../../providers/AppStateProvider";
 import { useEffect } from "react";
 
-export function MainNavbar({ tabList, }) {
+export function MainNavbar({ tabList }) {
     const { tabs } = useAppState((state) => state)
 
     useEffect(() => {

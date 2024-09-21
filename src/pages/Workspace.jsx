@@ -26,7 +26,7 @@ export default function Workspace() {
             };
             getFiles().then();
         }
-    }, [id, tabs]);
+    }, [id, tabs, selectedTab]);
 
     return (
         <>

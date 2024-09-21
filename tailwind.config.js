@@ -13,7 +13,6 @@ export default {
         'error': 'hsl(var(--error))',
         'primary': 'hsl(var(--primary))',
         'text': 'hsl(var(--text))',
-        'accent/20': 'hsl(var(--accent-20))',
         'trans-gray': 'hsl(var(--trans-gray))',
         'text-sc': 'hsl(var(--text-sc))',
       },

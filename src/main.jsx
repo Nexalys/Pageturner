@@ -33,6 +33,7 @@ const router = createBrowserRouter([
             {
                 path: '/open',
                 element: pages.open,
+                children: pages.OpenChildren
             }
         ]
     },

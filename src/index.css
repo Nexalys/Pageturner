@@ -4,7 +4,7 @@
 
 :root {
     font-family: "Sora", sans-serif;
-    @apply font-extralight select-none;
+    @apply select-none;
     font-size: 16px;
 
     --trans-gray: 218 11% 65% / 20%;
@@ -13,7 +13,6 @@
 
 :root.light {
     --accent: 209 100% 45%;
-    --accent-20: 209 100% 45% / 25%;
     --on-accent: 0 0% 100%;
     --background: 223 25% 96%;
     --primary: 223 30% 90%;
@@ -23,9 +22,8 @@
 
 :root.dark {
     --accent: 209 100%  60%;
-    --accent-20: 209 100% 57% / 25%;
-    --background: 240 6% 25%;
-    --primary: 240 7% 20%;
+    --background: 231 17% 22%;
+    --primary: 233 19% 15%;
     --text: 0 0% 100%;
     --text-sc: 218 11% 65%;
 }
@@ -42,4 +40,8 @@
 ::selection {
     background-color: hsl(var(--accent));
     color: hsl(var(--background));
+}
+
+ul {
+    padding-left: 40px;
 }

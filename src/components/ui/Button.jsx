@@ -22,7 +22,7 @@ export function Button(props) {
             break
     }
     return (
-        <button {...props} className={styleType}>
+        <button {...props} className={`${styleType} ${props.className}`}>
             {props.children}
         </button>
     )

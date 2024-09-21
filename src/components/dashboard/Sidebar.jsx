@@ -7,7 +7,7 @@ export function HomeSidebar() {
         <>
             <section className='h-full w-[25%] flex flex-col justify-center relative top-[-4%]'>
                 <Link to={'/'}>
-                    <h1 className='text-center text-5xl font-light my-7 py-[10%] text-accent'>
+                    <h1 className='text-center text-4xl my-7 py-[10%] text-accent font-bold'>
                         Pageturner
                     </h1>
                 </Link>
