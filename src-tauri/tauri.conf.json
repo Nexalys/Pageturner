@@ -15,6 +15,9 @@
       "path": {
         "all": true
       },
+      "dialog": {
+        "all": true
+      },
       "fs": {
         "scope": ["**"],
         "all": true,
